@@ -6,9 +6,9 @@
     <hr>
     {% for post in posts %}
     <h2><a href="{% url 'blog_detail' post.pk%}">{{ post.title }}</a></h2>
-     <p>{{ post.text| slice:":400" }}...</p>
+     <p>{{ post.text| slice:":200" }}...</p>
     <hr>
-    <small>Author: {{ post.author }} &nbsp; || &nbsp; created: {{ post.date_created }}  &nbsp; || &nbsp;  created: {{ post.date_modified }}  </small>
+    <small>Author: {{ post.author }} &nbsp; || &nbsp; created: {{ post.date_created }}  &nbsp; || &nbsp;  last_updated: {{ post.date_modified }}  </small>
     <br><br><br>
     {% endfor %}
 
