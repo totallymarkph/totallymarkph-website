@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'markdownx',
 ]
 
 MIDDLEWARE = [
@@ -118,7 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-MEDIA_ROOT = u'/home/totallymarkph/mysite/media'
+MEDIA_ROOT = u'/Users/Mark/Desktop/django/media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = u'/home/totallymarkph/mysite/static'
+STATIC_ROOT = u'/Users/Mark/Desktop/django/static'
 STATIC_URL = '/static/'

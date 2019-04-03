@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="col-md-8 offset-md-2">
+    <h1>{{ post.title }}</h1>
+    <hr>
+    <small>Created: {{ post.date_created }} &nbsp;||&nbsp; Last updated:{{ post.date_modified }}</small>
+    <br>
+    <p>{{ post.formatted_markdown | safe  }}</p>
+
+
+</div>
+{% endblock %}
