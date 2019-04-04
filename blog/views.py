@@ -3,7 +3,7 @@ from blog.models import Blog
 
 
 def blog_index(request):
-    posts = Blog.objects.all().order_by('-date_created')
+    posts = Blog.objects.all().order_by('-pk')
     context = {
         'posts': posts,
     }

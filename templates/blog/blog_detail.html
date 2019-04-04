@@ -2,10 +2,11 @@
 
 {% block page_content %}
 <div class="col-md-8 offset-md-2">
+    <br><br><br>
     <h1>{{ post.title }}</h1>
     <hr>
     <small>Created: {{ post.date_created }} &nbsp;||&nbsp; Last updated:{{ post.date_modified }}</small>
-    <br>
+    <br><br>
     <p>{{ post.formatted_markdown | safe  }}</p>
 
 

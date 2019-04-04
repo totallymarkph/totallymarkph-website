@@ -6,7 +6,7 @@
     <hr>
     {% for post in posts %}
     <h2><a href="{% url 'blog_detail' post.pk%}">{{ post.title }}</a></h2>
-     <p>{{ post.text| slice:":200" }}...</p>
+     <p>{{ post.formatted_markdown | safe | slice:":200" }}...</p>
     <hr>
     <small>Author: {{ post.author }} &nbsp; || &nbsp; created: {{ post.date_created }}  &nbsp; || &nbsp;  last_updated: {{ post.date_modified }}  </small>
     <br><br><br>

@@ -25,7 +25,7 @@ SECRET_KEY = '_h=oj-t6=w-mg%zu(bc^=3j@wt81m#!bs6u2((_vh(=at+gk&e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['totallymarkph.pythonanywhere.com']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'totallymarkph.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates/'],
+        'DIRS': ['mysite/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,7 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-MEDIA_ROOT = u'/Users/Mark/Desktop/django/media'
+MEDIA_ROOT = u'/home/totallymarkph/mysite/media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = u'/Users/Mark/Desktop/django/static'
+STATIC_ROOT = u'/home/totallymarkph/mysite/static'
 STATIC_URL = '/static/'
